@@ -15,13 +15,13 @@ def load_lottie_amimation(file_path):
         return json.load(f)
     
 def run_snow_animation():
-    rain(emoji="God", font_size=20, falling_speed=5, animation_length="infinit")
+    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinit")
     
 def get_person_name():
     query_params = st.experimental_get_query_params()
     return query_params.get("name", ["friend"])[0]
 
-st.set_page_config(page_title="JESUS IS COMING", page_icon="😒")
+st.set_page_config(page_title="welcome", page_icon="😒")
 
 run_snow_animation()
 
